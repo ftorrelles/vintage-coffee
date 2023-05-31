@@ -4,7 +4,16 @@ import ModalVision from "./ModalVision";
 import { useState } from "react";
 import ModalMision from "./ModalMision";
 
+import "animate.css/animate.min.css";
+//libreria para detectar cuando la seccion este en el vh
+import { useInView } from "react-intersection-observer";
+
 const AboutText = () => {
+    //logica libreria react-intersection-observer
+    const [ref, inView] = useInView({
+        threshold: 0.2,
+        triggerOnce: true,
+    });
     //modal Vision
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -17,17 +26,26 @@ const AboutText = () => {
     return (
         <>
             <div className="about-container">
-                <h2>¿Quiénes SOMOS?</h2>
+                <h2
+                    className={`animate__animated ${
+                        inView ? "animate__fadeInDown" : ""
+                    }`}
+                    ref={ref}
+                >
+                    ¿Quiénes SOMOS?
+                </h2>
                 <p>
-                    Somos una empresa que se dedica a la fabricaion de unas
-                    crocantes e irresistibles galletas de café. <br />
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Neque accusantium doloribus velit pariatur maiores quia,
+                    consequuntur itaque facilis sint dolorem quaerat nihil
+                    cupiditate ipsum possimus perferendis ipsa qui, sequi
+                    deserunt? Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Ab quidem nisi repellendus soluta
+                    necessitatibus. Placeat, dolores. Ipsam praesentium tempore
+                    atque tempora quam odio, nihil, odit optio enim
+                    reprehenderit assumenda soluta.
                     <br />
-                    Estas se elaboran artesanalmente con los mejores
-                    ingredientes, además del cuidado y dedicación de nuestras
-                    colaboradoras que son mujeres campesinas, quienes se
-                    caracterizan por su entrega y amor en la fabricación de
-                    estas galletas y contribuyen con su talento humano a tener
-                    un producto de excelente calidad.
+                    <br />
                 </p>
                 <div
                     style={{

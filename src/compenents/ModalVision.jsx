@@ -9,14 +9,15 @@ const ModalVision = ({ show, handleClose }) => {
                 </Modal.Header>
                 <Modal.Body>
                     <p style={{ color: "black" }}>
-                        En VINTAGE COFFEE queremos ser una de las mejores
-                        alternativas para los consumidores de galletas,
-                        utilizando la materia prima de nuestra zona cafetera,
-                        ofreciendo a nuestros consumidores un producto delicioso
-                        y de origen, mediante la elaboración y venta de
-                        productos con calidad y excelencia; logrando así un alto
-                        nivel de satisfacción a nuestros clientes y con un
-                        crecimiento dinámico y rentable.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Neque quisquam nemo eos repellendus quibusdam quae
+                        aperiam provident. Adipisci nostrum, quibusdam ab,
+                        ducimus earum, quasi aspernatur sit officiis consectetur
+                        debitis vel. Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Suscipit deserunt, pariatur,
+                        repellendus voluptatem, maiores nulla voluptatibus nam a
+                        nostrum aut laudantium nihil aliquam impedit? Blanditiis
+                        quasi quae illo est ab.
                     </p>
                 </Modal.Body>
             </Modal>

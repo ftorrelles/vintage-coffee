@@ -1,10 +1,25 @@
 import React from "react";
 import "../styles/socialInnovation.css";
+import "animate.css/animate.min.css";
+//libreria para detectar cuando la seccion este en el vh
+import { useInView } from "react-intersection-observer";
 
 const SocialInnovation = () => {
+    //logica libreria react-intersection-observer
+    const [ref, inView] = useInView({
+        threshold: 0.2,
+        triggerOnce: true,
+    });
     return (
         <section className="social-innovation">
-            <h2 className="section-title">Innovación social</h2>
+            <h2
+                className={`section-title animate__animated ${
+                    inView ? "animate__fadeInDown" : ""
+                }`}
+                ref={ref}
+            >
+                Innovación social
+            </h2>
             <div className="container">
                 <div className="row">
                     <div className="col-md-4 col-sm-6 col-12">
@@ -14,10 +29,11 @@ const SocialInnovation = () => {
                                     Nuestras mujeres
                                 </h3>
                                 <p className="octagon-description">
-                                    Nuestras galletas de café son elaboradas
-                                    artesanalmente por mujeres campesinas de la
-                                    vereda Guamal La Coca de Santa Rosa de
-                                    Cabal.
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Porro id nemo, quam soluta
+                                    ipsa doloribus beatae blanditiis omnis
+                                    dicta, fuga voluptates modi enim corrupti
+                                    veniam iusto est tempore culpa expedita.
                                 </p>
                             </div>
                         </div>
@@ -27,10 +43,11 @@ const SocialInnovation = () => {
                             <div className="octagon octagon-4">
                                 <h3 className="octagon-title">Oportunidades</h3>
                                 <p className="octagon-description">
-                                    Brindamos la oportunidad de trabajo a
-                                    mujeres que no tienen la posibilidad de
-                                    laborar en zona urbana por temas de
-                                    movilidad y gastos adicionales.
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Rerum facere ipsa maxime
+                                    natus dicta voluptate fugiat provident porro
+                                    nulla inventore, quo rem officia libero
+                                    beatae fuga suscipit hic at non.
                                 </p>
                             </div>
                         </div>
@@ -40,9 +57,12 @@ const SocialInnovation = () => {
                             <div className="octagon octagon-4">
                                 <h3 className="octagon-title">Economia</h3>
                                 <p className="octagon-description">
-                                    Brindamos accesibilidad, solvencia
-                                    económica, independencia y bienestar en su
-                                    entorno familiar.
+                                    Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Sapiente qui sint nam,
+                                    blanditiis consequatur nulla accusamus
+                                    dolore quisquam quam voluptatibus
+                                    exercitationem fuga ratione, dicta, unde
+                                    maxime omnis quas possimus veniam?
                                 </p>
                             </div>
                         </div>

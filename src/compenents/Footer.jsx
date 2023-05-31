@@ -25,23 +25,17 @@ function Footer() {
                     <div className="footer-content">
                         <h3 style={{ textAlign: "center" }}>
                             <a href="/#">
-                                <strong>Vintage Coffee</strong>
+                                <strong>Caffe Crunch</strong>
                             </a>
                         </h3>
                     </div>
                     <div className="footer-content">
                         <h3 style={{ textAlign: "center" }}>Redes sociales</h3>
                         <div className="div_icons_contact">
-                            <a
-                                href="https://www.linkedin.com/in/biupoll-sas-4971a1273/"
-                                target="_blank"
-                            >
+                            <a href="" target="_blank">
                                 <i className="bx bxl-linkedin"></i>
                             </a>
-                            <a
-                                href="https://api.whatsapp.com/message/LOR4BMDYHZ3GJ1?autoload=1&app_absent=0"
-                                target="_blank"
-                            >
+                            <a href="" target="_blank">
                                 <i className="bx bxl-whatsapp"></i>
                             </a>
                             <a href="" target="_blank">
@@ -52,7 +46,7 @@ function Footer() {
                 </div>
                 <div className="copy">
                     <p className="footer_copy">
-                        © Vintage Coffee. All rigths reserved{" "}
+                        ©Caffe Crunch. All rigths reserved{" "}
                     </p>
                 </div>
             </footer>

@@ -1,5 +1,91 @@
-.testimonials_container {
-    padding: 10rem 5rem 5rem 5rem;
-    background-color: #201e1e;
-    color: white;
+:root {
+    --dark: #201e1e;
+    --detail: #f05a36;
+    --detail2: #b83437;
+    --caffee: #5c382c;
+    --light-color: #fefefe;
+    --grey: #96989a;
+}
+
+.spikes {
+    position: relative;
+    background: var(--dark);
+    /* height: 50vh; */
+}
+
+.spikes::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: -0%;
+    top: 100%;
+    z-index: 10;
+    display: block;
+    height: 50px;
+    background-size: 50px 100%;
+    background-image: linear-gradient(135deg, var(--dark) 25%, transparent 25%),
+        linear-gradient(225deg, var(--dark) 25%, transparent 25%);
+    background-position: 0 0;
+}
+
+.content-testimonials .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    max-width: 90%;
+    color: var(--detail);
+}
+.content-testimonials .testimonial-slider {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    overflow: hidden;
+}
+.content-testimonials .testimonial-container .testimonial-photo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.content-testimonials .testimonial-container .testimonial-name {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.content-testimonials .testimonial-container .testimonial-text {
+    margin-top: 10px;
+    color: var(--light-color);
+}
+
+.content-testimonials .slick-slider {
+    margin: 0 auto;
+}
+
+.content-testimonials .slick-list {
+    overflow: hidden;
+}
+
+.content-testimonials .slick-slide > div {
+    outline: none;
+}
+
+.content-testimonials .slick-dots {
+    bottom: -25px;
+}
+.content-testimonials .slick-dots {
+    bottom: 10px; /* Ajusta la posición según tus preferencias */
+    z-index: 1; /* Asegura que los puntos estén en la parte superior */
+}
+
+.content-testimonials .slick-dots li button:before {
+    font-size: 10px;
+}
+
+@media (max-width: 768px) {
+    .content-testimonials .testimonial-container .testimonial-photo {
+        width: 80px;
+        height: 80px;
+    }
 }

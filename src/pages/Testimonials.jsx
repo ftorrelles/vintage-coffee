@@ -1,14 +1,12 @@
-import React from "react";
-import "../styles/testimonials.css";
-import PhotoGallery from "../compenents/PhotoGallery";
+import ContentTestimonials from "../compenents/ContentTestimonials";
+import Differential from "../compenents/Differential";
 
 const Testimonials = () => {
     return (
         <>
-            <div className="testimonials_container">
-                <h2>Testimonials</h2>
-            </div>
-            <PhotoGallery />
+            <div style={{ height: "5rem", background: "#201e1e" }}></div>
+            <ContentTestimonials />
+            <Differential />
         </>
     );
 };

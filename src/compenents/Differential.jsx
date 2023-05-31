@@ -16,7 +16,7 @@ const Differential = () => {
             <div className="differential__content">
                 <h2
                     className={`differential__title animate__animated ${
-                        inView ? "animate__fadeIn" : ""
+                        inView ? "animate__fadeInDown" : ""
                     }`}
                     ref={ref}
                 >
@@ -39,11 +39,12 @@ const Differential = () => {
                                         Elaboración artesanal
                                     </Card.Title>
                                     <Card.Text>
-                                        Nuestras galletas son elaboradas a mano
-                                        con ingredientes de la más alta calidad,
-                                        lo que les otorga un sabor especial y
-                                        una textura más crocante que cualquier
-                                        otra galleta común.
+                                        Lorem ipsum dolor sit amet consectetur,
+                                        adipisicing elit. Expedita, sequi totam
+                                        cum est incidunt eum a quas quia
+                                        exercitationem dolorem quibusdam facere
+                                        saepe voluptatem reprehenderit qui
+                                        cumque non doloremque et?
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
@@ -52,7 +53,7 @@ const Differential = () => {
                             <Card
                                 className={`differential__feature ${
                                     inView
-                                        ? "animate__animated animate__fadeIn animate__delay-2s"
+                                        ? "animate__animated animate__fadeIn animate__delay-1s"
                                         : ""
                                 }`}
                                 ref={ref}
@@ -63,11 +64,13 @@ const Differential = () => {
                                         Cuidado del medio ambiente
                                     </Card.Title>
                                     <Card.Text>
-                                        Nos preocupamos por el medio ambiente,
-                                        por lo que nuestro empaque está
-                                        elaborado en su mayoría con cartón
-                                        kraft, siendo una empresa consciente con
-                                        el cuidado ambiental.
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Provident, debitis
+                                        earum tempore perferendis qui ea
+                                        pariatur soluta repellendus vel
+                                        aspernatur animi, aperiam ipsa nostrum
+                                        expedita numquam quos consequatur, quae
+                                        officiis!
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
@@ -76,7 +79,7 @@ const Differential = () => {
                             <Card
                                 className={`differential__feature ${
                                     inView
-                                        ? "animate__animated animate__fadeIn animate__delay-3s"
+                                        ? "animate__animated animate__fadeIn animate__delay-1s"
                                         : ""
                                 }`}
                                 ref={ref}
@@ -87,11 +90,12 @@ const Differential = () => {
                                         Diseño elegante y práctico
                                     </Card.Title>
                                     <Card.Text>
-                                        Nuestros productos son ideales para
-                                        comercializar en los principales nichos
-                                        de mercado, para satisfacer los gustos
-                                        más exigentes. Además, nuestros empaques
-                                        tienen un diseño elegante y práctico.
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Perspiciatis
+                                        repudiandae hic atque itaque vero qui
+                                        explicabo, velit repellendus ut animi
+                                        aut cum porro fuga nam neque adipisci,
+                                        sit, optio blanditiis?
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
