@@ -1,6 +1,7 @@
 import AboutText from "../compenents/AboutText";
 import Differential from "../compenents/Differential";
 import "../styles/about.css";
+import Team from "./Team";
 const About = () => {
     return (
         <>
@@ -8,6 +9,7 @@ const About = () => {
                 {" "}
                 <AboutText />
             </div>
+            <Team />
             <Differential />
         </>
     );

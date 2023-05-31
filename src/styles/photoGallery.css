@@ -43,7 +43,7 @@
 /* Estilos para pantallas pequeñas */
 @media (max-width: 767px) {
     .photo-gallery-container {
-        max-width: 100%;
+        max-width: 95%;
         margin: 0;
         padding-left: 1rem;
         padding-right: 1rem;

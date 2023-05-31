@@ -4,6 +4,7 @@ import PhotoGallery from "../compenents/PhotoGallery";
 import AboutText from "../compenents/AboutText";
 import ContentTestimonials from "../compenents/ContentTestimonials";
 import ContentHome from "../compenents/ContentHome";
+import Team from "./Team";
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <SocialInnovation />
             <ContentTestimonials />
             <PhotoGallery />
+            <Team />
         </>
     );
 };
